@@ -1,0 +1,25 @@
+{
+  "name": "routy",
+  "version": "0.0.1",
+  "description": "Routing for react-native with redux and Navigator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhigang1992/routy.git"
+  },
+  "keywords": [
+    "react-native",
+    "router",
+    "Navigator",
+    "redux"
+  ],
+  "author": "Kyle Fang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhigang1992/routy/issues"
+  },
+  "homepage": "https://github.com/zhigang1992/routy#readme"
+}
