@@ -2,7 +2,7 @@
  * @flow
  */
 
-import { Component, Element } from 'react'
+import React, { Component, Element } from 'react'
 import { Navigator, BackAndroid } from 'react-native'
 import { connect } from 'react-redux'
 import _ from 'lodash'
@@ -73,13 +73,12 @@ class Router extends Component {
 
 const mapProps = (store, props) => {
   const mountPoint = props.routyMountPoint || 'routes'
-  const routes = store[mountPoint]
+  const routesMap = store[mountPoint]
+  const routes = props.routyGroup != null ? routesMap[props.routyGroup] : routesMap
   if (routes == null) {
     console.error(`No routes found in ${mountPoint}`)
   }
-  return {
-    routes: routes[props.routyGroup]
-  }
+  return { routes }
 }
 
 const mapAction = (dispatch, props) => {
