@@ -3,7 +3,7 @@ React Native Routy
 
 
 
-**Using Navigator with Redux, and keep everything in store.**
+Using Navigator with Redux, and keep everything in store.
 
 
 
