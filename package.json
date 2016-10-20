@@ -1,5 +1,5 @@
 {
-  "name": "routy",
+  "name": "react-native-routy",
   "version": "0.0.1",
   "description": "Routing for react-native with redux and Navigator",
   "main": "index.js",
