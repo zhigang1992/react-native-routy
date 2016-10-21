@@ -84,7 +84,7 @@ const mapProps = (store, props) => {
 const mapAction = (dispatch, props) => {
   return {
     pop: () => dispatch(pop(props.routyGroup)),
-    resetRoute: (routes: Array<Route>) => dispatch(resetTo(routes, props.routyGroup))
+    resetRoutes: (routes: Array<Route>) => dispatch(resetTo(routes, props.routyGroup))
   }
 }
 
