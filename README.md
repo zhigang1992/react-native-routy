@@ -1,3 +1,4 @@
+
 React Native Routy
 --------
 
@@ -24,13 +25,12 @@ npm install --save react-native-routy
 #### Reducer
 
 ```javascript
-import {reducer as routyReducer} from 'routy'
+import {reducer as routyReducer} from 'react-native-routy'
 
 export default combineReducers({
   //... other routes here
   routes: routyReducer([{page: 'Home'}]) // `[{page: 'Home'}]` is your initial route
 })
-
 ```
 
 > by default, you should mount this reducer in `routes` of your root reducer, but you customize this too.
@@ -39,7 +39,7 @@ export default combineReducers({
 #### Component
 
 ```javascript
-import {Route} from 'routy'
+import {Route} from 'react-native-routy'
 
 <Route
   routyMountPoint="routes" // this is optional
@@ -53,7 +53,7 @@ import {Route} from 'routy'
 #### Actions
 
 ```javascript
-import {actions as routyAction} from 'routy'
+import {actions as routyAction} from 'react-native-routy'
 ...
 export default connect(null, (dispatch) => ({
   pushToEvent: () => dispatch(routyAction.pushRoute({page: 'Events'})),
@@ -70,7 +70,7 @@ This component also support having multiple router instances, here is how:
 #### Reducer
 
 ```javascript
-import {reducer as routyReducer} from 'routy'
+import {reducer as routyReducer} from 'react-native-routy'
 
 export default combineReducers({
   //... other routes here
@@ -85,7 +85,7 @@ export default combineReducers({
 #### Component
 
 ```javascript
-import {Route} from 'routy'
+import {Route} from 'react-native-routy'
 
 <Tab>
   <TabItem>
@@ -119,7 +119,7 @@ import {Route} from 'routy'
 #### Actions
 
 ```javascript
-import {actions as routyAction} from 'routy'
+import {actions as routyAction} from 'react-native-routy'
 ...
 export default connect(null, (dispatch) => ({
   pushToEvent: () => dispatch(routyAction.pushRoute({page: 'Events'}, 'home')),
